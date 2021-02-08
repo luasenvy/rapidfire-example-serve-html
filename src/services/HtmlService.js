@@ -1,10 +1,12 @@
 const path = require('path')
 
 const {
-  Interfaces: { Service },
+  Interfaces: { Service, ServiceLoader },
 } = require('@luasenvy/rapidfire')
 
 class HtmlService extends Service {
+  static loader = ServiceLoader
+
   /**
    * [constructor description]
    * @return {[type]} options.router     [description]
